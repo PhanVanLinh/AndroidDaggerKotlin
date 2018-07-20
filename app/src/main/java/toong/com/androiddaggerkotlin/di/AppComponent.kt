@@ -1,6 +1,7 @@
 package toong.com.androiddaggerkotlin.di
 
 import android.app.Application
+import com.hieupham.absolutecleanarchitecturekt.di.ActivityBuilderModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -9,7 +10,7 @@ import toong.com.androiddaggerkotlin.MyApplication
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [AndroidSupportInjectionModule::class, AppModule::class])
+@Component(modules = [AndroidSupportInjectionModule::class, AppModule::class, ActivityBuilderModule::class])
 interface AppComponent : AndroidInjector<MyApplication> {
 
     // Gives us syntactic sugar. we can then do DaggerAppComponent.builder().application(this).build().inject(this);

@@ -1,7 +1,8 @@
-package toong.com.androiddaggerkotlin
+package toong.com.androiddaggerkotlin.feature.main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import toong.com.androiddaggerkotlin.R
 
 class MainActivity : AppCompatActivity() {
 
